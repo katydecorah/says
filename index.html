@@ -68,7 +68,7 @@ var things = [
 ]
 function randomize() {
   var thing = things[Math.floor(Math.random() * things.length)];
-  document.getElementById("flex").innerHTML = "thing;
+  document.getElementById("flex").innerHTML = thing;
   document.title = "Katy says, &ldquo;" + thing + "&rdquo;";
 }
 randomize();
