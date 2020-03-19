@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katy says</title>
+<meta name="description" content="Things Katy says">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='//fonts.googleapis.com/css?family=Poppins:700' rel='stylesheet' type='text/css'>
+<style>
+html,
+body,
+.flex {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  text-align: center;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  font-size: 20vmin;
+}
+
+.flex {
+  word-wrap: break-word;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+::-moz-selection {
+  background: #F76565;
+  color: #fff;
+}
+
+::selection {
+  background: #F76565;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="flex" id="flex"></div>
+<script>
+var things = [
+  "wow",
+  "ok!!!!",
+  "not our subdomain, not our problem",
+  "murn!",
+  "chef kiss",
+  "i love sentry",
+  "i created like 10 pull requests, but they are no rush",
+  "let's line up these elements",
+  "!!!",
+  "what",
+  "more",
+  "omg",
+  "i'm going to fix this 404",
+  "let's add a test"
+]
+function randomize() {
+  var thing = things[Math.floor(Math.random() * things.length)];
+  document.getElementById("flex").innerHTML = "thing;
+  document.title = "Katy says, &ldquo;" + thing + "&rdquo;";
+}
+randomize();
+</script>
+</body>
+</html>
